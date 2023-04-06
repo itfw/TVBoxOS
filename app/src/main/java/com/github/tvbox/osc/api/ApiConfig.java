@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://agit.ai/nohe2001/TVBox/raw/branch/TVBox/qj0715.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://www.itfw.net/tv.php");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
